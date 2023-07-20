@@ -21,8 +21,10 @@ services:
    - 3000:3000
   volumes:
    - ./front:/front/
-  command: bash -c "cd front && npm install && npm run dev" 
+  command: bash -c "cd front && npm run dev" 
   depends_on: 
    - back 
 
+   
+#  command: bash -c "cd front && npm install && npm run dev" 
    
